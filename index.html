@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MFitness reponsive webite build using HTML5, CSS3 and Javascript The complete layout of the page is build using grid layout and flexbox with some cool animations."
+    />
+    <title>Naturalfis</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="home">
+      <div class="container">
+        <nav class="header-navigation" aria-label="navigation">
+          <div class="logo"><span class="yellow">Natural</span>Fis</div>
+
+          <img
+            src="img/Imag-Sesion/img(86).jpg"
+            alt="navigation icon"
+            class="nav-icon"
+            width="30"
+            height="30"
+          />
+
+          <ul>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#about">Acerca de</a>
+            </li>
+            <li>
+              <a href="#courses">Servicios</a>
+            </li>
+            <li>
+              <a href="#trainers">Terapeuta</a>
+            </li>
+            <li>
+              <a href="#contact">Contactanos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="section-hero">
+        <div class="container hero-box">
+          <div class="hero-content margin-bottom">
+            <h1 class="heading heading--1 margin-bottom">
+              Calidad de  <span class="yellow">Vida</span>
+            </h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </p>
+          </div>
+          <div class="btn-group">
+              <a href="https://maps.app.goo.gl/JRe3Fv5WYcFexsMb6" target="_blank">
+             <button class="btn btn__primary">Visítanos 📍</button>
+           </a> 
+        </div>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <section class="section-about" id="about">
+        <div class="about-box container">
+          <div class="about-box__content" data-aos="fade-up">
+            <h2 class="heading heading--2">
+              Acerca De <span class="yellow">Natural</span>Fis
+            </h2>
+            <p>
+              En Naturalfis creemos en el poder transformador de la fisioterapia 
+              natural. Nuestro equipo especializado combina técnicas tradicionales 
+              y modernas para restaurar tu bienestar físico. Nos dedicamos a 
+              tratar cada paciente de manera personalizada, entendiendo que tu recuperación 
+              es única. Juntos trabajaremos para que recuperes tu movilidad y calidad de vida.
+            </p>
+           
+          </div>
+          <figure class="about-box__image" data-aos="fade-up">
+            <img
+              src="img/Pre Selected/2acerca.jpg"
+              alt="about-image-one"
+              width="350"
+              height="233"
+            />
+            <img
+              src="img/Pre Selected/3acerca.jpg"
+              alt="about-image-twwo"
+              width="350"
+              height="233"
+            />
+            <img
+              src="img/Pre Selected/4acerca.jpg"
+              alt="about-image-three"
+              width="420"
+              height="280"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION COURSES -->
+      <section class="section-courses" id="courses">
+        <div class="container courses-box" data-aos="fade-up">
+          <header class="courses-heading">
+            <h2 class="heading heading--2 underline">Nuestros Servicios</h2>
+            <p>
+              En Naturalfis ofrecemos servicios especializados de fisioterapia con técnicas avanzadas y tratamientos personalizados. Nuestro equipo profesional te acompaña en tu proceso de recuperación y bienestar integral.
+            </p>
+          </header>
+
+          <article class="courses-content">
+            <div class="class-card carousel-container">
+              <div class="service-carousel">
+                <!-- Slide 1: Primera imagen del test magnético -->
+                <div class="service-slide active">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/5Magnetico.jpg"
+                    alt="test magnético"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Evaluación diagnóstica mediante campos magnéticos para detectar lesiones internas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Segunda imagen del test magnético -->
+                <div class="service-slide">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/5y1Magnetico.JPG"
+                    alt="equipo magnético avanzado"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Tecnología avanzada de resonancia magnética para diagnóstico preciso.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controles del carousel -->
+                <button class="service-carousel-btn prev" data-carousel="magnetico">&#8249;</button>
+                <button class="service-carousel-btn next" data-carousel="magnetico">&#8250;</button>
+
+                <!-- Indicadores -->
+                <div class="service-carousel-indicators">
+                  <span class="service-indicator active" data-slide="0" data-carousel="magnetico"></span>
+                  <span class="service-indicator" data-slide="1" data-carousel="magnetico"></span>
+                </div>
+              </div>
+              
+              <div class="class-card__title">Test Magnético</div>
+            </div>
+
+            <div class="class-card carousel-container">
+              <div class="service-carousel">
+                <!-- Slide 1: Primera imagen de ultrasonido -->
+                <div class="service-slide active">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/6ultras.JPG"
+                    alt="ultrasonido terapéutico"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Tratamiento con ondas sonoras para reducir inflamación y dolor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Segunda imagen de ultrasonido -->
+                <div class="service-slide">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/6y1ultras.JPG"
+                    alt="equipo ultrasonido"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Equipos de ultrasonido de última generación para terapia profunda.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controles del carousel -->
+                <button class="service-carousel-btn prev" data-carousel="ultrasonido">&#8249;</button>
+                <button class="service-carousel-btn next" data-carousel="ultrasonido">&#8250;</button>
+
+                <!-- Indicadores -->
+                <div class="service-carousel-indicators">
+                  <span class="service-indicator active" data-slide="0" data-carousel="ultrasonido"></span>
+                  <span class="service-indicator" data-slide="1" data-carousel="ultrasonido"></span>
+                </div>
+              </div>
+              
+              <div class="class-card__title">Aplicación Ultrasonido</div>
+            </div>
+
+            <div class="class-card carousel-container">
+              <div class="service-carousel">
+                <!-- Slide 1: Primera imagen de electroterapia -->
+                <div class="service-slide active">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/7electroterapia.jpg"
+                    alt="electroterapia"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Uso de corrientes eléctricas terapéuticas para rehabilitación muscular.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Segunda imagen de electroterapia -->
+                <div class="service-slide">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/7y1electroterapia.png"
+                    alt="equipos electroterapia"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Equipos modernos de estimulación eléctrica para recuperación muscular.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controles del carousel -->
+                <button class="service-carousel-btn prev" data-carousel="electroterapia">&#8249;</button>
+                <button class="service-carousel-btn next" data-carousel="electroterapia">&#8250;</button>
+
+                <!-- Indicadores -->
+                <div class="service-carousel-indicators">
+                  <span class="service-indicator active" data-slide="0" data-carousel="electroterapia"></span>
+                  <span class="service-indicator" data-slide="1" data-carousel="electroterapia"></span>
+                </div>
+              </div>
+              
+              <div class="class-card__title">Electroterapia</div>
+            </div>
+
+            <div class="class-card carousel-container">
+              <div class="service-carousel">
+                <!-- Slide 1: Video de ejercicios terapéuticos -->
+                <div class="service-slide active">
+                  <video
+                    class="class-card__video"
+                    src="img/Pre Selected/8Ejerterapeutico.MP4"
+                    width="550"
+                    height="550"
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                  ></video>
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Movimientos específicos para restaurar función y fortalecer músculos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Imagen de ejercicios terapéuticos -->
+                <div class="service-slide">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/8y1ejerciciot.jpg"
+                    alt="ejercicios terapéuticos"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Rutinas personalizadas de rehabilitación y fortalecimiento muscular.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controles del carousel -->
+                <button class="service-carousel-btn prev" data-carousel="ejercicios">&#8249;</button>
+                <button class="service-carousel-btn next" data-carousel="ejercicios">&#8250;</button>
+
+                <!-- Indicadores -->
+                <div class="service-carousel-indicators">
+                  <span class="service-indicator active" data-slide="0" data-carousel="ejercicios"></span>
+                  <span class="service-indicator" data-slide="1" data-carousel="ejercicios"></span>
+                </div>
+              </div>
+              
+              <div class="class-card__title">Ejercicios Terapéuticos</div>
+            </div>
+
+            <div class="class-card carousel-container">
+              <div class="service-carousel">
+                <!-- Slide 1: Imagen principal de masajes -->
+                <div class="service-slide active">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/9MasajesT.JPG"
+                    alt="masajes terapéuticos"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Manipulación manual de tejidos para aliviar tensión y dolor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Técnicas de masaje -->
+                <div class="service-slide">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/9y1masajesT.JPG"
+                    alt="técnicas de masaje"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Técnicas especializadas: masaje sueco, deep tissue y relajante.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+                <!-- Controles del carousel -->
+                <button class="service-carousel-btn prev" data-carousel="masajes">&#8249;</button>
+                <button class="service-carousel-btn next" data-carousel="masajes">&#8250;</button>
+
+                <!-- Indicadores -->
+                <div class="service-carousel-indicators">
+                  <span class="service-indicator active" data-slide="0" data-carousel="masajes"></span>
+                  <span class="service-indicator" data-slide="1" data-carousel="masajes"></span>
+                </div>
+              </div>
+              
+              <div class="class-card__title">Masajes Terapéuticos</div>
+            </div>
+
+            <div class="class-card carousel-container">
+              <div class="service-carousel">
+                <!-- Slide 1: Imagen principal -->
+                <div class="service-slide active">
+                  <img
+                    class="class-card__img"
+                    src="img/Pre Selected/10y1ozonot.jpg"
+                    alt="ozonoterapia"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Tratamiento con ozono médico para mejorar oxigenación celular.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Proceso del tratamiento -->
+                <div class="service-slide">
+                   <video
+                class="class-card__video"
+                src="img/Pre Selected/10OzonoT.mp4"
+                width="550"
+                height="550"
+                muted
+                loop
+                autoplay
+                playsinline
+              ></video>
+                  <div class="class-card__overlay">
+                    <div class="text">
+                      <p>
+                        Aplicación profesional con equipos especializados y protocolos seguros.
+                      </p>
+                    </div>
+                  </div>
+                </div>               
+
+                <!-- Controles del carousel -->
+                <button class="service-carousel-btn prev" data-carousel="ozonoterapia">&#8249;</button>
+                <button class="service-carousel-btn next" data-carousel="ozonoterapia">&#8250;</button>
+
+                <!-- Indicadores -->
+                <div class="service-carousel-indicators">
+                  <span class="service-indicator active" data-slide="0" data-carousel="ozonoterapia"></span>
+                  <span class="service-indicator" data-slide="1" data-carousel="ozonoterapia"></span>
+                   
+                </div>
+              </div>
+              
+              <div class="class-card__title">Ozonoterapia</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION OFFER -->
+      <section class="section-offer" id="offer">
+        <div class="offer-box">
+          <div class="offer" data-aos="fade-up">
+            <h2 class="heading heading--2 margin-bottom">
+              ¡Oferta especial hasta el final de mes!
+            </h2>
+            <p class="margin-bottom">
+              Trae una persona a su primera sesion terapeutica ¡Y recibe un 50% de descuento en
+              la próxima sesión terapéutica!
+               
+            </p>
+           <a href="https://maps.app.goo.gl/JRe3Fv5WYcFexsMb6" target="_blank">
+             <button class="btn btn__primary">Visítanos 📍</button>
+           </a> 
+          </div>
+
+          <div class="offer-img"></div>
+        </div>
+      </section>
+
+      <!-- SECTION COACHES -->
+      <section class="section-coaches" id="trainers">
+        <div class="container coaches-box" data-aos="fade-up">
+          <header class="coache-heading">
+            <h2 class="heading heading--2 underline margin-bottom">
+              Conoce a Nuestro Profesional de la Salud
+            </h2>
+            <p>
+              
+            </p>
+          </header>
+
+          <article class="coache-content">
+            <div class="professional-carousel">
+              <!-- Slide 1: Imagen del profesional -->
+              <div class="carousel-slide active">
+                <div class="c-card">
+                  <img
+                    src="img/LuisTera.jpeg"
+                    alt="profesional fisioterapia"
+                    class="c-card__img"
+                    width="550"
+                    height="550"
+                  />
+                  <div class="c-card__content">
+                    <p class="c-name">Luis O. Lorenzo</p>
+                    <p class="c-title">Fisioterapeuta</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Información profesional -->
+              <div class="carousel-slide">
+                <div class="professional-info-card">
+                  <div class="info-header">
+                    <h3 class="professional-name">Luis O. Lorenzo</h3>
+                    <p class="professional-title">Fisioterapeuta</p>
+                  </div>
+                  
+                  <div class="credentials">
+                    <h4>Credenciales:</h4>
+                    <ul>
+                      <li>Licenciatura en Fisioterapia</li>
+                      <li>Especialización en Terapia Manual</li>
+                      <li>15 años de experiencia</li>
+                    </ul>
+                  </div>
+
+                  <div class="specialties">
+                    <h4>Especialidades:</h4>
+                    <ul>
+                      <li>Rehabilitación deportiva</li>
+                      <li>Electroterapia y ultrasonido</li>
+                      <li>Ozonoterapia médica</li>
+                    </ul>
+                  </div>
+
+                  <div class="contact-info">
+                    <p><strong>Horario:</strong> Lun-Vie 8:00 AM - 6:00 PM</p>
+                    <p><strong>Tel:</strong> +1 (849) 577-3789</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controles del carrusel -->
+              <button class="carousel-btn prev">&#8249;</button>
+              <button class="carousel-btn next">&#8250;</button>
+
+              <!-- Indicadores -->
+              <div class="carousel-indicators">
+                <span class="carousel-indicator active" data-slide="0"></span>
+                <span class="carousel-indicator" data-slide="1"></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION REVIEW -->
+      <!-- <section class="section-review" id="review">
+        <div class="review-box container" data-aos="fade-up">
+          <h2 class="heading heading--2 underline margin-bottom grid-center">
+           Opiniones de Nuestros Pacientes
+          </h2>
+
+          <div class="review-card">
+            <img
+              src="https://raw.githubusercontent.com/Manoranjan-D/responsive-website-gym/master/img/review-img-1.jpg"
+              alt="user"
+              class="review-card__image"
+              width="100"
+              height="100"
+            />
+            <blockquote class="review-card__content">
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Sapiente possimus aperiam
+              </p>
+
+              <div class="name">Cesar Rincon</div>
+            </blockquote>
+          </div>
+
+          <div class="review-card">
+            <img
+              src="https://raw.githubusercontent.com/Manoranjan-D/responsive-website-gym/master/img/review-img-2.jpg"
+              alt="user"
+              class="review-card__image"
+              width="100"
+              height="100"
+            />
+            <blockquote class="review-card__content">
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Sapiente possimus aperiam
+              </p>
+              <div class="name">Mathilde Langevin</div>
+            </blockquote>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- SECTION CONTACT -->
+      <section class="section-contact" id="contact">
+        <div class="contact-box">
+          <form class="form-grp" data-aos="fade-up" id="contactForm">
+            <h2 class="heading heading--2 margin-bottom">
+              Contacta con <span class="yellow">Natural</span>Fis
+            </h2>
+
+            <input type="text" class="form form__input" placeholder="Nombre" id="nombre" required />
+            <input type="text" class="form form__input" placeholder="Telefono" id="telefono" required />
+            <textarea
+              name="message"
+              cols="5"
+              rows="3"
+              class="form form__input"
+              placeholder="Mensaje"
+              id="mensaje"
+              required
+              ></textarea>
+            <button type="submit" class="btn btn__primary form-flex">Enviar</button>
+          </form>
+          <div id="mapid" data-aos="fade-up"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section-footer" id="footer">
+      <div class="footer-box container">
+        <div class="contact-details">
+          <h2 class="margin-bottom"><span class="yellow">Natural</span>fis</h2>
+
+          <ul class="contact-data">
+            <li class="location"> C. Via 27, Los Rios D.N, Santo Domingo Oeste. D.N</li>
+            <li class="phone">+1 (849) 577-3789</li>
+            <li class="email"> </li>
+            <li class="social">
+               <a href="https://api.whatsapp.com/send?phone=18495773789&text=Buenas%2C+me+interesa+sus+servicios">
+              <img
+                src="https://raw.githubusercontent.com/Manoranjan-D/responsive-website-gym/master/img/logo-whatsapp.svg"
+                alt="whatsapp icon"
+                width="35"
+                height="35"
+              /></a>
+
+              <img
+                src="https://raw.githubusercontent.com/Manoranjan-D/responsive-website-gym/master/img/logo-facebook.svg"
+                alt="facebook icon"
+                width="35"
+                height="35"
+              />
+
+              <a href="https://www.instagram.com/natural_fis?igsh=ZnVjeWw3MXQxYmhw">
+              <img
+                src="https://raw.githubusercontent.com/Manoranjan-D/responsive-website-gym/master/img/logo-instagram.svg"
+                alt="instagram icon"
+                width="35"
+                height="35"
+              />
+              </a>
+
+              
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Links Rapidos</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#trainers">Terapeuta</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- <div class="newsletter">
+          <div class="newsletter__title">News Letter</div>
+          <div class="newsletter__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            nisi!
+          </div>
+          <form class="newsletter__input">
+            <input type="text" class="form" placeholder="example@domine.com" />
+          
+            <img
+              src="https://raw.githubusercontent.com/Manoranjan-D/responsive-website-gym/master/img/send.svg"
+              alt="send icon"
+              class="send-icon"
+              width="36"
+              height="36"
+            /> 
+          </form>
+        </div> -->
+
+        <div class="legel">
+          <!-- <p class="text">Copyright © by Manoranjan </p> -->
+          
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="carousel.js"></script>
+  </body>
+</html>
