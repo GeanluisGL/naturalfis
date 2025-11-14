@@ -1,37 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content=" En Naturalfis creemos en el poder transformador de la fisioterapia 
-              natural. Nuestro equipo especializado combina técnicas tradicionales 
-              y modernas para restaurar tu bienestar físico. Nos dedicamos a 
-              tratar cada paciente de manera personalizada, entendiendo que tu recuperación 
-              es única. Juntos trabajaremos para que recuperes tu movilidad y calidad de vida."
-    />
-    <title>Naturalfis</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Naturalfis | Centro de Fisioterapia y Rehabilitación en Santo Domingo | Tratamientos Especializados</title>
+    <meta name="description" content="Naturalfis - Centro especializado en fisioterapia y rehabilitación muscular en Santo Domingo. Ofrecemos ozonoterapia, masajes terapéuticos, electroterapia, ultrasonido y ejercicios terapéuticos. ¡Recupera tu movilidad y calidad de vida!" />
+    <meta name="keywords" content="fisioterapia, fisioterapia Santo Domingo, rehabilitación muscular, ozonoterapia, masajes terapéuticos, electroterapia, ultrasonido terapéutico, ejercicios terapéuticos, Naturalfis, fisioterapeuta República Dominicana, centro de fisioterapia, tratamiento dolor muscular, terapia física" />
+    <meta name="author" content="Naturalfis" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://naturalfis.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://naturalfis.com/" />
+    <meta property="og:title" content="Naturalfis | Centro de Fisioterapia y Rehabilitación en Santo Domingo" />
+    <meta property="og:description" content="Centro especializado en fisioterapia y rehabilitación muscular. Ozonoterapia, masajes terapéuticos, electroterapia y más. ¡Recupera tu calidad de vida!" />
+    <meta property="og:image" content="https://naturalfis.com/img/Pre Selected/Principal.jpg" />
+    <meta property="og:locale" content="es_DO" />
+    <meta property="og:site_name" content="Naturalfis" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://naturalfis.com/" />
+    <meta property="twitter:title" content="Naturalfis | Centro de Fisioterapia y Rehabilitación" />
+    <meta property="twitter:description" content="Centro especializado en fisioterapia y rehabilitación muscular en Santo Domingo." />
+    <meta property="twitter:image" content="https://naturalfis.com/img/Pre Selected/Principal.jpg" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="DO-DN" />
+    <meta name="geo.placename" content="Santo Domingo" />
+    <meta name="geo.position" content="18.486058;-69.931212" />
+    <meta name="ICBM" content="18.486058, -69.931212" />
+    
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3DB373">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "@id": "https://naturalfis.com",
+      "name": "Naturalfis",
+      "alternateName": "Centro de Fisioterapia Naturalfis",
+      "description": "Centro especializado en fisioterapia y rehabilitación muscular en Santo Domingo, República Dominicana. Ofrecemos ozonoterapia, masajes terapéuticos, electroterapia, ultrasonido y ejercicios terapéuticos.",
+      "url": "https://naturalfis.com",
+      "telephone": "+1-849-577-3789",
+      "priceRange": "$$",
+      "image": "https://naturalfis.com/img/Pre Selected/Principal.jpg",
+      "logo": "https://naturalfis.com/img/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C. Via 27, Los Rios",
+        "addressLocality": "Santo Domingo Oeste",
+        "addressRegion": "Distrito Nacional",
+        "addressCountry": "DO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.486058",
+        "longitude": "-69.931212"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ],
+      "medicalSpecialty": "Physiotherapy",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Fisioterapia",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Ozonoterapia",
+              "description": "Tratamiento con ozono médico para mejorar oxigenación celular"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Masajes Terapéuticos",
+              "description": "Manipulación manual de tejidos para aliviar tensión y dolor"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Electroterapia",
+              "description": "Uso de corrientes eléctricas terapéuticas para rehabilitación muscular"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Aplicación Ultrasonido",
+              "description": "Tratamiento con ondas sonoras para reducir inflamación y dolor"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Ejercicios Terapéuticos",
+              "description": "Movimientos específicos para restaurar función y fortalecer músculos"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.instagram.com/natural_fis",
+        "https://api.whatsapp.com/send?phone=18495773789"
+      ]
+    }
+    </script>
   </head>
-  <body>
+  <body itemscope itemtype="https://schema.org/MedicalBusiness">
     <!-- HEADER -->
-    <header class="header" id="home">
+    <header class="header" id="home" role="banner">
       <div class="container">
-        <nav class="header-navigation" aria-label="navigation">
-          <div class="logo"><span class="yellow">Natural</span>Fis</div>
+        <nav class="header-navigation" aria-label="Navegación principal" role="navigation">
+          <div class="logo" itemscope itemtype="https://schema.org/Organization">
+            <span itemprop="name"><span class="yellow">Natural</span>Fis</span>
+          </div>
 
           <img
             src="img/logo.png"
-            alt="navigation icon"
+            alt="Logo Naturalfis - Centro de Fisioterapia"
             class="nav-icon"
             width="30"
             height="30"
+            itemprop="logo"
           />
 
           <ul>
@@ -55,30 +177,30 @@
       </div>
     </header>
 
-    <main>
+    <main role="main">
       <!-- HERO SECTION -->
-      <section class="section-hero">
+      <section class="section-hero" itemscope itemtype="https://schema.org/MedicalBusiness">
         <!-- Hero Background Carousel -->
-        <div class="hero-carousel">
+        <div class="hero-carousel" role="region" aria-label="Carrusel de imágenes del centro">
           <div class="hero-slide active">
-            <img src="img/Pre Selected/Principal.jpg" alt="Naturalfis Principal" class="hero-slide__img">
+            <img src="img/Pre Selected/Principal.jpg" alt="Centro de Fisioterapia Naturalfis en Santo Domingo - Instalaciones modernas para tratamiento y rehabilitación" class="hero-slide__img" loading="eager">
           </div>
           <div class="hero-slide">
-            <img src="img/Pre Selected/acerca.jpg" alt="Naturalfis Acerca" class="hero-slide__img">
+            <img src="img/Pre Selected/acerca.jpg" alt="Sesión de fisioterapia personalizada en Naturalfis - Profesionales atendiendo pacientes" class="hero-slide__img" loading="lazy">
           </div>
           <div class="hero-slide">
-            <img src="img/Pre Selected/acercac.jpg" alt="Naturalfis Servicios" class="hero-slide__img">
+            <img src="img/Pre Selected/acercac.jpg" alt="Equipos especializados de fisioterapia y rehabilitación en Naturalfis" class="hero-slide__img" loading="lazy">
           </div>
         </div>
         
         <div class="container hero-box">
           <div class="hero-content margin-bottom">
-            <h1 class="heading heading--1 margin-bottom">
-              Calidad de  <span class="yellow">Vida</span>
+            <h1 class="heading heading--1 margin-bottom" itemprop="name">
+              Recupera tu Calidad de <span class="yellow">Vida</span> con Fisioterapia Profesional
             </h1>
-            <h3 class="description">
-              Centro de Fisioterapia y Rehabilitación muscular en el Distrito Nacional.
-            </h3>
+            <h2 class="description" itemprop="description">
+              Centro Especializado en Fisioterapia y Rehabilitación Muscular en Santo Domingo, República Dominicana
+            </h2>
           </div>
           <div class="btn-group">
               <a href="https://maps.app.goo.gl/JRe3Fv5WYcFexsMb6" target="_blank">
@@ -88,11 +210,11 @@
       </section>
 
       <!-- SECTION ABOUT -->
-      <section class="section-about" id="about">
+      <section class="section-about" id="about" itemscope itemtype="https://schema.org/AboutPage">
         <div class="about-box container">
           <div class="about-box__content" data-aos="fade-up">
             <h2 class="heading heading--2">
-              Acerca De <span class="yellow">Natural</span>Fis
+              Acerca De <span class="yellow">Natural</span>Fis - Tu Centro de Fisioterapia en Santo Domingo
             </h2>
             <p>
               En Naturalfis creemos en el poder transformador de la fisioterapia 
@@ -106,33 +228,36 @@
           <figure class="about-box__image" data-aos="fade-up">
             <img
               src="img/Pre Selected/acerca.jpg"
-              alt="about-image-one"
+              alt="Tratamiento de fisioterapia personalizado en Naturalfis Santo Domingo"
               width="350"
               height="233"
+              loading="lazy"
             />
             <img
               src="img/Pre Selected/acercac.jpg"
-              alt="about-image-twwo"
+              alt="Equipamiento profesional de rehabilitación en centro Naturalfis"
               width="350"
               height="233"
+              loading="lazy"
             />
             <img
               src="img/Pre Selected/acercas.jpg"
-              alt="about-image-three"
+              alt="Instalaciones modernas de fisioterapia Naturalfis en República Dominicana"
               width="420"
               height="280"
+              loading="lazy"
             />
           </figure>
         </div>
       </section>
 
       <!-- SECTION COURSES -->
-      <section class="section-courses" id="courses">
+      <section class="section-courses" id="courses" itemscope itemtype="https://schema.org/Service">
         <div class="container courses-box" data-aos="fade-up">
           <header class="courses-heading">
-            <h2 class="heading heading--2 underline">Nuestros Servicios</h2>
-            <p>
-              En Naturalfis ofrecemos servicios especializados de fisioterapia con técnicas avanzadas y tratamientos personalizados. Nuestro equipo profesional te acompaña en tu proceso de recuperación y bienestar integral.
+            <h2 class="heading heading--2 underline">Servicios de Fisioterapia y Rehabilitación en Santo Domingo</h2>
+            <p itemprop="description">
+              En Naturalfis ofrecemos servicios especializados de fisioterapia con técnicas avanzadas y tratamientos personalizados. Nuestro equipo profesional te acompaña en tu proceso de recuperación muscular, manejo del dolor y bienestar integral en el Distrito Nacional.
             </p>
           </header>
 
@@ -462,11 +587,11 @@
       </section>
 
       <!-- SECTION OFFER -->
-      <section class="section-offer" id="offer">
+      <section class="section-offer" id="offer" itemscope itemtype="https://schema.org/Offer">
         <div class="offer-box">
           <div class="offer" data-aos="fade-up">
             <h2 class="heading heading--2 margin-bottom">
-              ¡Oferta especial hasta el final de mes!
+              ¡Promoción Especial en Fisioterapia - Hasta Fin de Mes!
             </h2>
             <p class="margin-bottom">
               Trae una persona a su primera sesion terapeutica ¡Y recibe un 50% de descuento en
@@ -483,11 +608,11 @@
       </section>
 
       <!-- SECTION COACHES -->
-      <section class="section-coaches" id="trainers">
+      <section class="section-coaches" id="trainers" itemscope itemtype="https://schema.org/Person">
         <div class="container coaches-box" data-aos="fade-up">
           <header class="coache-heading">
             <h2 class="heading heading--2 underline margin-bottom">
-              Conoce a Nuestro Profesional de la Salud
+              Conoce a Nuestro Fisioterapeuta Profesional Certificado
             </h2>
             <p>
               
@@ -605,15 +730,15 @@
       </section> -->
 
       <!-- SECTION CONTACT -->
-      <section class="section-contact" id="contact">
+      <section class="section-contact" id="contact" itemscope itemtype="https://schema.org/ContactPage">
         <div class="contact-box">
-          <form class="form-grp" data-aos="fade-up" id="contactForm">
+          <form class="form-grp" data-aos="fade-up" id="contactForm" aria-label="Formulario de contacto">
             <h2 class="heading heading--2 margin-bottom">
-              Contacta con <span class="yellow">Natural</span>Fis
+              Contacta con <span class="yellow">Natural</span>Fis - Agenda tu Cita de Fisioterapia
             </h2>
 
-            <input type="text" class="form form__input" placeholder="Nombre" id="nombre" required />
-            <input type="text" class="form form__input" placeholder="Telefono" id="telefono" required />
+            <input type="text" class="form form__input" placeholder="Nombre" id="nombre" required aria-label="Nombre completo" />
+            <input type="tel" class="form form__input" placeholder="Telefono" id="telefono" required aria-label="Número de teléfono" />
             <textarea
               name="message"
               cols="5"
@@ -622,8 +747,9 @@
               placeholder="Mensaje"
               id="mensaje"
               required
+              aria-label="Mensaje"
               ></textarea>
-            <button type="submit" class="btn btn__primary form-flex">Enviar</button>
+            <button type="submit" class="btn btn__primary form-flex">Enviar Consulta</button>
           </form>
           <div id="mapid" data-aos="fade-up"></div>
         </div>
@@ -631,20 +757,25 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="section-footer" id="footer">
+    <footer class="section-footer" id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
       <div class="footer-box container">
-        <div class="contact-details">
+        <div class="contact-details" itemscope itemtype="https://schema.org/LocalBusiness">
           <h2 class="margin-bottom"><span class="yellow">Natural</span>fis</h2>
 
           <ul class="contact-data">
-            <li class="location"> C. Via 27, Los Rios D.N, Santo Domingo Oeste. D.N</li>
-            <li class="phone">+1 (849) 577-3789</li>
+            <li class="location" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+              <span itemprop="streetAddress">C. Via 27, Los Rios</span>, 
+              <span itemprop="addressLocality">Santo Domingo Oeste</span>. 
+              <span itemprop="addressRegion">D.N</span>, 
+              <span itemprop="addressCountry">República Dominicana</span>
+            </li>
+            <li class="phone" itemprop="telephone">+1 (849) 577-3789</li>
             <li class="email"> </li>
             <li class="social">
-               <a href="https://api.whatsapp.com/send?phone=18495773789&text=Buenas%2C+me+interesa+sus+servicios">
+               <a href="https://api.whatsapp.com/send?phone=18495773789&text=Buenas%2C+me+interesa+sus+servicios" aria-label="Contactar por WhatsApp">
               <img
                 src="https://raw.githubusercontent.com/Manoranjan-D/responsive-website-gym/master/img/logo-whatsapp.svg"
-                alt="whatsapp icon"
+                alt="WhatsApp - Contacta con Naturalfis"
                 width="35"
                 height="35"
               /></a>
@@ -656,10 +787,10 @@
                 height="35"
               /> -->
 
-              <a href="https://www.instagram.com/natural_fis?igsh=ZnVjeWw3MXQxYmhw">
+              <a href="https://www.instagram.com/natural_fis?igsh=ZnVjeWw3MXQxYmhw" aria-label="Visitar Instagram de Naturalfis">
               <img
                 src="https://raw.githubusercontent.com/Manoranjan-D/responsive-website-gym/master/img/logo-instagram.svg"
-                alt="instagram icon"
+                alt="Instagram - Síguenos en Naturalfis"
                 width="35"
                 height="35"
               />
